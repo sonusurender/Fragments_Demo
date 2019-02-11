@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Static fragment for fragment one -->
+
+    <fragment
+        android:id="@+id/fragment_one"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        class="com.android_fragment_demo.Fragment_One" />
+
+    <!-- Static fragment for fragment two -->
+
+    <fragment
+        android:id="@+id/fragment_two"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        class="com.android_fragment_demo.Fragment_Two" />
+
+    <Button
+         android:id="@+id/show_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Fragment One" />
+
+    <Button
+        android:id="@+id/show_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Fragment Two" />
+
+    <Button
+        android:id="@+id/remove_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Fragment" />
+
+    <!-- Container for dynamic fragments -->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+    </FrameLayout>
+
+</LinearLayout>
